@@ -28,7 +28,7 @@ body {
   z-index: 1;
 }
 
-.tel-link:hover {
+.tel-link {
   animation: animate 8s linear infinite;
 	animate: 0.5s;
 	transition: 0.5s;
@@ -61,7 +61,7 @@ body {
   
 }
 
-.tel-link:hover:before {
+.tel-link:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
