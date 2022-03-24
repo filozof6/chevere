@@ -14,7 +14,7 @@ function App() {
           <img src={logo} className="App-logo spin-left" alt="logo" />
           <Avatar
             alt="Maestro Ron"
-            src="/assets/chevere-avatar.jpg"
+            src="../assets/chevere-avatar.jpg"
             sx={{
               width: 100,
               height: 100,
@@ -29,6 +29,7 @@ function App() {
 
         <p style={{ marginTop: 200 }}>
           <h3>Amazonian Curandero</h3>
+          <strong>Maestro Cheverengue</strong><br />
           Pucallpa<br />
           <a className="App-link tel-link" href="tel:+51988243569">
             <WhatsAppIcon
