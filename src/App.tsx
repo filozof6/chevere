@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useWindowSize } from "@react-hook/window-size";
+import Confetti from "react-confetti";
 import logo from "./logo.svg";
 import "./App.css";
 import "./Rainbow.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Avatar } from "@mui/material";
-import chevereAvatar from './assets/chevere-avatar.jpg';
+import chevereAvatar from "./assets/chevere-avatar.jpg";
 
 function App() {
+  const [width, height] = useWindowSize();
+  const [shouldRun, setShouldRun] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setShouldRun(false);
+    }, 5000);
+  }, []);
   return (
     <div className="App">
+      <Confetti width={width} height={height} recycle={shouldRun}/>
       <header className="App-header">
         <div style={{ width: "100%" }}>
           <img src={logo} className="App-logo spin-right" alt="logo" />
@@ -30,7 +40,8 @@ function App() {
 
         <p style={{ marginTop: 200 }}>
           <h3>Amazonian Curandero</h3>
-          <strong>Maestro Cheverengue</strong><br />
+          <strong>Maestro Cheverengue</strong>
+          <br />
           Pucallpa<br />
           <a className="App-link tel-link" href="tel:+51988243569">
             <WhatsAppIcon
