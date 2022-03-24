@@ -4,6 +4,7 @@ import "./App.css";
 import "./Rainbow.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Avatar } from "@mui/material";
+import chevereAvatar from './assets/chevere-avatar.jpg';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <img src={logo} className="App-logo spin-left" alt="logo" />
           <Avatar
             alt="Maestro Ron"
-            src="../assets/chevere-avatar.jpg"
+            src={chevereAvatar}
             sx={{
               width: 100,
               height: 100,
