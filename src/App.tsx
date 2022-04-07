@@ -7,6 +7,7 @@ import "./Rainbow.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Avatar } from "@mui/material";
 import chevereAvatar from "./assets/chevere-avatar.jpg";
+import { Carousel } from "./Carousel";
 
 function App() {
   const [width, height] = useWindowSize();
@@ -40,8 +41,8 @@ function App() {
 
         <p style={{ marginTop: 200 }}>
           <h3>Amazonian Curandero</h3>
-          <strong>Maestro Cheverengue</strong>
-          <br />
+          <strong>RANIN INO</strong>
+          <p>Ronal Barbaran Brito</p>
           Pucallpa<br />
           <a className="App-link tel-link" href="tel:+51988243569">
             <WhatsAppIcon
@@ -50,6 +51,7 @@ function App() {
             +51 988 243 569
           </a>
         </p>
+        <Carousel />
       </header>
     </div>
   );
