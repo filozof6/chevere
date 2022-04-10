@@ -12,12 +12,12 @@ import { Paper, Button } from '@mui/material'
 export function Carousel(props: any)
 {
     var items = [
-        { img: photo1, },
+        // { img: photo1, },
         { img: photo2, },
-        { img: photo3, },
+        // { img: photo3, },
         { img: photo4, },
         { img: photo5, },
-        { img: photo6, },
+        // { img: photo6, },
         { img: photo7, },
     ]
 
