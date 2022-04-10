@@ -22,7 +22,7 @@ export function Carousel(props: any)
     ]
 
     return (
-        <CarouselLib fullHeightHover sx={{ width: '100%'}} >
+        <CarouselLib fullHeightHover sx={{ width: '100%', minHeight: 300, paddingBottom: 400}} >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
