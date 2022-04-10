@@ -44,11 +44,11 @@ function App() {
           <strong>RANIN INO</strong>
           <p>Ronal Barbaran Brito</p>
           Pucallpa<br />
-          <a className="App-link tel-link" href="tel:+51988243569">
+          <a className="App-link tel-link" href="tel:+51938885412">
             <WhatsAppIcon
               sx={{ position: "relative", top: "4px", marginRight: "5px" }}
             />
-            +51 988 243 569
+            +51 938 885 412
           </a>
         </p>
         <Carousel />
